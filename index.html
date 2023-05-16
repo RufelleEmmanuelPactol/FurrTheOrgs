@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+<h1 style="text-align: center">Purrfect Furr The Orgs</h1>
+<form id="newcat">
+    <label for="name">Cat Name</label>
+    <input type="text" id="name" name="name" placeholder="Cleo" required maxlength="30">
+    <br>
+    <label for="orgName">Organization Name</label>
+    <input type="text" id="orgName" name="orgName" placeholder="FurrCats Inc." required maxlength="30">
+    <br>
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age" required placeholder="2 Months" max="11">
+    <br>
+    <label for="gender">Gender</label>
+    <input type="text" id="gender" name="gender" placeholder="male/female" required max="11">
+    <br>
+    <label for="image">Cat Image</label>
+    <br>
+    <input type="file" id="image" name="image" placeholder="Upload Cat Photo" required max="11" accept="image/png">
+    <br>
+    <div id="button_list">
+        <div class="button spec">
+            <input type="reset">
+        </div>
+        <br>
+        <div class="button spec">
+            <button name="add">Add Cat To Database</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>

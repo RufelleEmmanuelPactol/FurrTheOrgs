@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{
+    --darkbox :#282828;
+    --mocha: #EBDBB2;
+}
+
+.center_content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body
+{
+    font-family: "JetBrains Mono", monospace;
+    background-color: var(--darkbox);
+    color: var(--mocha);
+}
+
+#header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer
+{
+    height: 2em;
+}
+
+#profile
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile img
+{
+    border-radius: 150px;
+}
+
+p
+{
+    font-size: small;
+    margin-bottom: -1em;
+}
+
+footer
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#github_logo:hover
+{
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+
+#specialties
+{
+    font-size: x-large;
+}
+
+.text_center
+{
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-weight: 200;
+}
+
+.lister
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.list_item
+{
+    width: 25vw;
+}
+
+textarea
+{
+    font-family: "JetBrains Mono";
+}
+
+
+.center_pad
+{
+    margin-left: 35vw;
+    margin-right: 35vw;
+    margin-bottom: 15px;
+    padding: 2px 2px 2px 2px;
+}
+
+.left_pad
+{
+    margin-left: 5vw;
+    display: flex;
+    width: 17vw;
+    height: 8vh;
+    align-content: center;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+a
+{
+    color: inherit;
+    text-underline-mode: false;
+    text-decoration: none;
+}
+
+.button
+{
+    background: #EBDBB2;
+    border-radius: 45px;
+    color: #282828;
+    text-align: center;
+}
+
+.button:hover
+{
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{
+    --darkbox :#282828;
+    --mocha: #EBDBB2;
+}
+
+.center_content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body
+{
+    font-family: "JetBrains Mono", monospace;
+    background-color: var(--darkbox);
+    color: var(--mocha);
+}
+
+input[type="text"]
+{
+    font-family: "JetBrains Mono", monospace;
+    background-color: var(--mocha);
+    color: var(--darkbox);
+}
+
+input[type="file"]
+{
+    font-family: "JetBrains Mono", monospace;
+    background-color: var(--mocha);
+    color: var(--darkbox);
+}
+
+input[type="password"]
+{
+    font-family: "JetBrains Mono", monospace;
+    background-color: var(--mocha);
+    color: var(--darkbox);
+}
+
+#password{
+    font-family: "JetBrains Mono", monospace;
+    background-color: var(--mocha);
+    color: var(--darkbox);
+}
+
+#header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer
+{
+    height: 2em;
+}
+
+#profile
+{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile img
+{
+    border-radius: 150px;
+}
+
+p
+{
+    font-size: small;
+    margin-bottom: -1em;
+}
+
+footer
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+#github_logo:hover
+{
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+
+#specialties
+{
+    font-size: x-large;
+}
+
+.text_center
+{
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-weight: 200;
+}
+
+.lister
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.list_item
+{
+    width: 25vw;
+}
+
+textarea
+{
+    font-family: "JetBrains Mono", serif;
+}
+
+.head_button
+{
+    width: 10vw;
+}
+
+.button_array
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+.button
+{
+    background: #EBDBB2;
+    border-radius: 45px;
+    color: #282828;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover
+{
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.genform{
+    width: 100vw;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.genform button {
+    margin-right: 60%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+
+#button_list
+{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-weight: 600;
+    gap: 15px;
+}
+
+form
+{
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+.spec
+{
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.subtitle
+{
+    padding-left: 40vw;
+    padding-right: 40vw;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2.6em;
+}
+
+.heading
+{
+    font-size: medium;
+}
+
+#result_set
+{
+    font-size: small;
+    display: table;
+    width: 80vw;
+
+}
+
+#table_container
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.row
+{
+    display: table-row;
+}
+
+.cell
+{
+    display: table-cell;
+    border: 2px solid #EBDBB2;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.heading
+{
+    color:#282828;
+    background-color: #EBDBB2;
+}
+
+
+
+
