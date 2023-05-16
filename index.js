@@ -36,6 +36,10 @@ function main() {
     const catAge = document.querySelector('input[name="age"]');
     const gender = document.querySelector('input[name="gender"]');
     const imageRef = document.querySelector('input[name="image"]')
+    const success = document.getElementById('success')
+
+
+    success.hidden = true;
 
     logAllFormElements = () => {
         console.log(catName.value);
@@ -84,6 +88,7 @@ function main() {
         const storageRef = ref(storage, 'cats/' + ID)
         uploadBytes(storageRef, file).then((snapshot) => {
             console.log('Upload success!');
+            success.hidden = true;
         })
 
 
