@@ -88,7 +88,7 @@ function main() {
         const storageRef = ref(storage, 'cats/' + ID)
         uploadBytes(storageRef, file).then((snapshot) => {
             console.log('Upload success!');
-            success.hidden = true;
+            success.hidden = false;
         })
 
 
