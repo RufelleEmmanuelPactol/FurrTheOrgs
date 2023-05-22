@@ -86,8 +86,7 @@ function main() {
             resetButton.click();
             alert('Uploaded cat picture of ' + catName.value + ' successfully!');
 
-
-
+        }).then( async result => {
             await setDoc(doc(db, "cats", ID), {
                 name: name,
                 org: org,
@@ -99,8 +98,10 @@ function main() {
                 httpsRef: httpsRef,
                 isAdopted: false,
                 extension: fExtension
-            });
+            })
         })
+
+
 
 
 
