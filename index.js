@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
 import { getFirestore, doc, getDoc, getDocs, collection, setDoc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-analytics.js'
-import { getStorage, getDownloadURL, uploadBytes, ref } from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-storage.js'
+import { getStorage, uploadBytes, ref } from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-storage.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     main();
@@ -76,36 +76,21 @@ function main() {
             console.log(blob);
         }
 
-
-        const storageRef = ref(storage, 'cats/' + ID)
-        const downloadURL = getDownloadURL(storageRef)
-        const pathRef = storageRef;
-        const gsRef = storageRef;
-        const httpsRef = downloadURL;
-        uploadBytes(storageRef, file).then(async (snapshot) => {
-            resetButton.click();
-            alert('Uploaded cat picture of ' + catName.value + ' successfully!');
-
-        }).then( async result => {
-            await setDoc(doc(db, "cats", ID), {
-                name: name,
-                org: org,
-                age: age,
-                sex: sex,
-                imageID: ID,
-                storageRef: pathRef,
-                gsRef: gsRef,
-                httpsRef: httpsRef,
-                isAdopted: false,
-                extension: fExtension
-            })
+        await setDoc(doc(db, "cats", ID), {
+            name : name,
+            org : org,
+            age : age,
+            sex : sex,
+            imageID : ID,
+            isAdopted: false,
+            extension : fExtension
         })
 
-
-
-
-
-
+        const storageRef = ref(storage, 'cats/' + ID)
+        uploadBytes(storageRef, file).then((snapshot) => {
+            resetButton.click()
+            alert('Uploaded cat picture of ' + catName.value + ' successfully!')
+        })
 
 
     })
@@ -119,7 +104,6 @@ function main() {
 function getFileExtension (filename){
     return filename.substring(filename.lastIndexOf('.')+1, filename.length) || filename;
 }
-
 
 
 
