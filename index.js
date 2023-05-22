@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
 import { getFirestore, doc, getDoc, getDocs, collection, setDoc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-analytics.js'
-import { getStorage, uploadBytes, ref } from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-storage.js'
+import { getStorage, getDownloadURL, uploadBytes, ref } from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-storage.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     main();
