@@ -69,6 +69,7 @@ function main() {
         const ID = org+name;
 
         const file = imageRef.files[0];
+        const fExtension = imageRef.files[0].type;
         const reader = new FileReader();
         reader.onload = (file) => {
             const blob = file.target.result;
@@ -81,7 +82,8 @@ function main() {
             age : age,
             sex : sex,
             imageID : ID,
-            isAdopted: false
+            isAdopted: false,
+            extension : fExtension
         })
 
         const storageRef = ref(storage, 'cats/' + ID)
@@ -98,6 +100,10 @@ function main() {
 
 }
 
+
+function getFileExtension (filename){
+    return filename.substring(filename.lastIndexOf('.')+1, filename.length) || filename;
+}
 
 
 
