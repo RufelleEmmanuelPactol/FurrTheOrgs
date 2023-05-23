@@ -172,6 +172,13 @@ input[type="text"]
     color: var(--darkbox);
 }
 
+textarea
+{
+    font-family: "JetBrains Mono", monospace;
+    background-color: var(--mocha);
+    color: var(--darkbox);
+}
+
 input[type="file"]
 {
     font-family: "JetBrains Mono", monospace;
@@ -428,6 +435,11 @@ form
 {
     color:#282828;
     background-color: #EBDBB2;
+}
+
+.encapsulate {
+    display: flex;
+    justify-content: center;
 }
 
 

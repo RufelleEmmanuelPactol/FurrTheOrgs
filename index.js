@@ -83,7 +83,7 @@ function main() {
             sex : sex,
             imageID : ID,
             isAdopted: false,
-            extension : fExtension
+            extension : fExtension.toString()
         })
 
         const storageRef = ref(storage, 'cats/' + ID)
